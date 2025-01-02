@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Waidoban Results:</title>
+</head>
+<body>
+    <h1>Waidoban Results</h1>
+    <h2>About</h2>
+    <div class="content">
+        <div class="info">
+            <div>
+                <p>This is a web page designed to show the capabilities of waidoban.</p>
+                <p>Don't know what waidoban is? Check out the <a href="https://github.com/junku-dev/waidoban" target="_blank">github</a>.</p>
+                <p>
+                    Briefly, waidoban is a CLI that acts as a wrapper for <a href="https://qpdf.readthedocs.io/en/stable/" target="_blank">qpdf</a> and <a href="https://www.ghostscript.com/" target="_blank">ghostscript</a>.
+                    The goal was to make a tool that would make it easy to manipulate, compress, and optimize multiple PDF files at once.
+                </p>
+            </div>
+        </div>
+        <div class="results">
+            <h2>Comparing Quality to File Size</h2>
+            <div>
+                <p>
+                    Here are some sample images to show the abilities of ghostscript and qpdf in waidoban.
+                </p>
+                <p>
+                    50MB PDF File Compressed - 34MB
+                    <img src="/imgs/50mb_master.png" style="width:100%; height:auto;"/>
+                </p>
+                <p>
+                    50MB PDF File Compressed and Image Reduced to 150 DPI - 5.7MB
+                    <img src="/imgs/50mb_150dpi.png" alt="" style="width:100%; height:auto;" />
+                </p>
+                <p>
+                    50MB PDF File Compressed and Image Reduced to 72 DPI - 5.5MB
+                    <img src="/imgs/50mb_72dpi.png" alt="" style="width:100%; height:auto;" />
+                </p>
+                <p>
+                    Text in Berserk Volume 1 300 DPI Copy - 532.6MB
+                    <img src="/imgs/b_og.png" alt="" />
+                </p>
+                <p>
+                    Text in Berserk Volume 1 150 DPI Copy - 69MB
+                    <img src="/imgs/b_150.png" alt="" />
+                </p>
+                <p>
+                    Text in Berserk Volume 1 72 DPI Copy - 50.3MB
+                    <img src="/imgs/b_72.png" alt="" />
+                </p>
+                <p>
+                    Berserk Volume 1 Page 13 300 DPI Copy - 532.6MB
+                    <img src="/imgs/b_og_2.png" alt="">
+                </p>
+                <p>
+                    Berserk Volume 1 Page 13 150 DPI Copy - 69MB
+                    <img src="/imgs/b_150_2.png" alt="">
+                </p>
+                <p>
+                    Berserk Volume 1 Page 13 72 DPI Copy - 50.3MB
+                    <img src="/imgs/b_72_2.png" alt="">
+                </p>
+                <p>
+                    Text in Maison Ikkoku Volume 1 Master Copy - 462MB
+                    <img src="/imgs/mi_og.png" alt="">
+                </p>
+                <p>
+                    Text in Maison Ikkoku Volume 1 150 DPI Copy - 451.3MB
+                    <img src="/imgs/mi_150.png" alt="">
+                </p>
+                <p>
+                    Text in Maison Ikkoku Volume 1 72 DPI Copy - 57.5MB
+                    <img src="/imgs/mi_72.png" alt="">
+                </p>
+                <p>
+                    Maison Ikkoku Volume 1 Page 6 Master Copy - 462MB
+                    <img src="/imgs/mi_og_2.png" alt="">
+                </p>
+                <p>
+                    Maison Ikkoku Volume 1 Page 6 150 DPI Copy - 451.3MB
+                    <img src="/imgs/mi_150_2.png" alt="">
+                </p>
+                <p>
+                    Maison Ikkoku Volume 1 Page 6 72 DPI Copy - 57.5MB
+                    <img src="/imgs/mi_72_2.png" alt="">
+                </p>
+            </div>
+        </div>
+        <h2>Conclusions</h2>
+        <p>
+            Based on my observations, compressing a file and then using optimize to reduce images or scans to 150 DPI is optimal in MOST CASES.
+            150 DPI is pretty crisp and the file size is much smaller. Especially if you are viewing the file on a smaller device where the benefits of higher resolutions and higher DPIs are less noticable.
+        </p>
+        <p>
+            Using a combination of "optimize" and "compress" may yield VERY desirable results,
+            but this is situaional as it really depends on the nature of the file.
+            If the PDF file contains images and text then using both "optimize" and "compress" should work well.
+            If your PDF files comprises of mainly image scans, like manga, then "compress" may not do much and you will see the best gains using "optimize".
+            If your PDF files comprises of text, the "compress" will yield the best results.
+        </p>
+        <h3>Fair Use Statement</h3>
+        <p>
+            I do not own any of the illustrations, images, or content displayed on this site. All such materials are the property of their respective copyright owners. 
+            These images and contents are used solely for educational, commentary, and non-commercial purposes, and are intended to comply with the principles of <b>Fair Use under U.S. copyright law</b>. 
+            All rights to these works are retained by their respective owners.
+        </p>
+    </div>
+</body>
+</html>
